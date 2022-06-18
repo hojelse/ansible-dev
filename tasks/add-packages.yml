@@ -3,3 +3,4 @@
     name:
       - gh
       - docker
+      - dotnet-sdk-6.0
