@@ -14,3 +14,4 @@
     - include: tasks/add-packages.yml
     - include: tasks/add-vscode-deb.yml
     - include: tasks/add-discord-deb.yml
+    - include: tasks/add-nvm.yml
