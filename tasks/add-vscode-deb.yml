@@ -1,8 +1,8 @@
 - name: Download vscode
   get_url:
     url: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
-    dest: "{{ ansible_env.HOME }}/Downloads/vscode.deb"
+    dest: "~/Downloads/vscode.deb"
 
 - name: Install vscode
   apt:
-    deb: "{{ ansible_env.HOME }}/Downloads/vscode.deb"
+    deb: "~/Downloads/vscode.deb"
