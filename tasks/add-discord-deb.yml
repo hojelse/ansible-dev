@@ -1,8 +1,8 @@
 - name: Download discord
   get_url:
     url: https://discord.com/api/download?platform=linux&format=deb
-    dest: /home/hojelse/Downloads/discord.deb
+    dest: "{{ ansible_env.HOME }}/Downloads/discord.deb"
 
 - name: Install discord
   apt:
-    deb: /home/hojelse/Downloads/discord.deb
+    deb: "{{ ansible_env.HOME }}/Downloads/discord.deb"
