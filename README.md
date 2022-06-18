@@ -1,2 +1,2 @@
-# devconfig
-Ansible config for development machine
+# Ansible dev config
+Ansible config for personal development desktop
