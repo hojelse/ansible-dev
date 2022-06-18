@@ -1,6 +1,6 @@
 - name: add the Microsoft package signing key to your list of trusted keys and add the package repository
   get_url:
-    url: wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
+    url: https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
     dest: ~/Downloads/packages-microsoft-prod.deb
     mode: '0440'
 
