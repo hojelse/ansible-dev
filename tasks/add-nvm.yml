@@ -10,4 +10,4 @@
     creates: "/home/hojelse/.nvm/nvm.sh"
 
 - name: install node
-  shell: nvm install 18
+  shell: /home/hojelse/.nvm/nvm.sh install 18
