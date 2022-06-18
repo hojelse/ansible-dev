@@ -3,7 +3,6 @@
     url="https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
     dest="/home/hojelse/Downloads/vscode.deb"
 
-- name: Install my_package
+- name: Install vscode
   apt: deb="/home/hojelse/Downloads/vscode.deb"
   sudo: true
-
