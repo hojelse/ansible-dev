@@ -1,0 +1,2 @@
+- name: Set natural scroll direction
+  shell: gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
