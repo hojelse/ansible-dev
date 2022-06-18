@@ -1,5 +1,5 @@
 - name: Add packages
-  package:
+  apt:
     name:
       - gh
       - docker
