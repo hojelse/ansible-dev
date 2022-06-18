@@ -1,0 +1,9 @@
+---
+- hosts: localhost  # target localhost since using ansible-pull
+  connection: local # do not default to ssh
+  become: true      # enable sudo
+
+  tasks:
+  - name: install gh
+    package:
+      name: gh
