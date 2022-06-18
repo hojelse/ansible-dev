@@ -1,5 +1,7 @@
 - name: nvm
-  shell: >
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+  get_url:
+    url:  https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+    dest: /home/hojelse/Downloads/nvm-install.sh
+  shell: /home/hojelse/Downloads/nvm-install.sh
   args:
     creates: "/home/hojelse/.nvm/nvm.sh"
