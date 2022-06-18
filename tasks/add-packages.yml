@@ -1,4 +1,4 @@
- - name: Add packages
+- name: Add packages
   package:
     name:
       - gh
