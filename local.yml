@@ -4,6 +4,15 @@
   become: true      # enable sudo
 
   tasks:
-  - name: install gh
+  - name: install packages
     package:
-      name: gh
+      name:
+        - gh
+        - docker
+
+  - name: copy .bashrc file
+    copy:
+      src: files/bashrc
+      dest: /home/hojelse/.bashrc
+      owner: hojelse
+      group: hojelse
