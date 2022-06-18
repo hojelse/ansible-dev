@@ -2,6 +2,7 @@
   get_url:
     url:  https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
     dest: /home/hojelse/Downloads/nvm-install.sh
+    mode: 0777
 
 - name: install nvm
   shell: /home/hojelse/Downloads/nvm-install.sh
