@@ -12,3 +12,4 @@
   tasks:
     - include: tasks/add-ansible-pull-cron.yml
     - include: tasks/add-packages.yml
+    - include: tasks/add-vscode-deb.yml
