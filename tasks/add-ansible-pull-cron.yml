@@ -1,0 +1,19 @@
+- name: Add ansible user
+  user:
+    name: myansibleagent
+    system: yes
+
+- name: set up sudo for ansible user
+  copy:
+    src: files/sudoer_myansibleagent
+    dest: /etc/sudoers.d/myansibleagent
+    owner: root
+    group: root
+    mode: 0440
+
+- name: add cron job (ansible-pull)
+  cron:
+    user: myansibleagent
+    name: "ansible provision"
+    minute: "*/10"
+    job: "/usr/bin/ansible-pull -o -U https://github.com/hojelse/ansible-dev.git > /dev/null"

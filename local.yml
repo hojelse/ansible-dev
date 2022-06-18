@@ -3,16 +3,12 @@
   connection: local # do not default to ssh
   become: true      # enable sudo
 
-  tasks:
-  - name: install packages
-    package:
-      name:
-        - gh
-        - docker
+  pre_tasks:
+    - name: update repositories
+      apt:
+        update_cache: yes
+      changed_when: False
 
-  - name: copy .bashrc file
-    copy:
-      src: files/bashrc
-      dest: /home/hojelse/.bashrc
-      owner: hojelse
-      group: hojelse
+  tasks:
+    - include: tasks/add-ansible-pull-cron.yml
+    - include: tasks/add-packages.yml
