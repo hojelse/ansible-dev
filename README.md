@@ -18,4 +18,5 @@ ln -s ~/repo/dotfiles/.gitconfig ~/.gitconfig
 
 ```
 sudo apt install ansible
+sudo ansible-pull -U https://github.com/hojelse/ansible-dev.git
 ```
