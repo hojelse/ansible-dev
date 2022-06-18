@@ -9,5 +9,9 @@
   args:
     creates: "/home/hojelse/.nvm/nvm.sh"
 
-- name: install node
-  shell: /home/hojelse/.nvm/nvm.sh install 18
+- name: Install node and set version
+  become: yes
+  become_user: root
+  shell: "source /root/.nvm/nvm.sh && nvm install 18" 
+  args:
+    executable: /bin/bash
