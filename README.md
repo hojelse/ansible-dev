@@ -20,3 +20,12 @@ ln -s ~/repo/dotfiles/.gitconfig ~/.gitconfig
 sudo apt install ansible
 sudo ansible-pull -U https://github.com/hojelse/ansible-dev.git
 ```
+
+## TODO
+- gnome scroll direction natural
+- before installing dotnet:
+```
+wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
