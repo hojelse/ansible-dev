@@ -8,3 +8,6 @@
   shell: /home/hojelse/Downloads/nvm-install.sh
   args:
     creates: "/home/hojelse/.nvm/nvm.sh"
+
+- name: install node
+  shell: nvm install 18
