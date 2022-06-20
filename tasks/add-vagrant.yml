@@ -5,7 +5,8 @@
 
 - name: Add specified repository into sources list
   shell: >
-    sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+    apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+  become: yes
 
 - name: Add packages
   apt:
