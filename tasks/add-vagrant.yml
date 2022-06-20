@@ -1,6 +1,6 @@
 - name: Add virtualbox repository
   ansible.builtin.apt_repository:
-    repo: deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian jammy main"
+    repo: deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian jammy main
     state: present
 
 - name: Add an Apt signing key, uses whichever key is at the URL
