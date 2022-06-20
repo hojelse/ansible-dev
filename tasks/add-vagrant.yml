@@ -4,9 +4,8 @@
     state: present
 
 - name: Add specified repository into sources list
-  ansible.builtin.apt_repository:
-    repo: "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-    state: present
+  shell: >
+    sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 
 - name: Add packages
   apt:
