@@ -1,2 +1,5 @@
 - name: Set natural scroll direction
   shell: gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
+
+- name: Disable ctrl+alt+up/down
+  shell: gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['']" && gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['']"
