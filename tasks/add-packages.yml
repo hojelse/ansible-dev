@@ -5,3 +5,4 @@
       - docker
       - apt-transport-https
       - dotnet-sdk-6.0
+      - openjdk-18-jdk
