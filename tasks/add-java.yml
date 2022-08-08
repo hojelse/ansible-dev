@@ -1,0 +1,8 @@
+- name: Add java
+  apt:
+    name:
+      - openjdk-18-jdk
+- name: Add sdkman
+  shell: curl -s "https://get.sdkman.io" | bash
+- name: Add gradle
+  shell: sdk install gradle 7.5.1
