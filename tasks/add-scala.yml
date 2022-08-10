@@ -1,4 +1,4 @@
 - name: Download scala cli
-  get_url: url=https://virtuslab.github.io/scala-cli-packages/scala-setup.sh dest=/home/hojelse/hi mode=755
+  get_url: url=https://virtuslab.github.io/scala-cli-packages/scala-setup.sh dest=/opt mode=755
 - name: Setup scala cli
-  command: /hi/scala-setup.sh
+  command: /opt/scala-setup.sh
