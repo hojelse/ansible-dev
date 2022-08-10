@@ -1,0 +1,2 @@
+- name: Add scala cli
+  shell: curl -sSLf https://virtuslab.github.io/scala-cli-packages/scala-setup.sh | sh
