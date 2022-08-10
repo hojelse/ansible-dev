@@ -1,2 +1,2 @@
-- name: Add scala cli
-  shell: curl -sSLf https://virtuslab.github.io/scala-cli-packages/scala-setup.sh | sh
+- name: Download scala cli
+  get_url: url=https://virtuslab.github.io/scala-cli-packages/scala-setup.sh dest=/home/hojelse/hi mode=755
